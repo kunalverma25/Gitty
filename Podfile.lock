@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.6.0)
+  - INSPersistentContainer (1.0.2)
+  - IQKeyboardManagerSwift (5.0.6)
+  - Kingfisher (4.5.0)
+  - SkyFloatingLabelTextField (3.4.0)
+  - SVProgressHUD (2.2.2)
+  - SwiftyJSON (4.0.0)
+  - UIView+Shake (1.4.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - INSPersistentContainer
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - SkyFloatingLabelTextField
+  - SVProgressHUD
+  - SwiftyJSON
+  - UIView+Shake
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  INSPersistentContainer: 7e04a0d332ba075441ce0ee73d584ce84d76ac23
+  IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
+  Kingfisher: 26ae0473102b77b575da51960c932431e3745407
+  SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  UIView+Shake: 055ad67721de1f74d29c0a1d464697e505dfc62f
+
+PODFILE CHECKSUM: c7e00423b8fbb191db67a2ddceb96e544a994d9d
+
+COCOAPODS: 1.2.1

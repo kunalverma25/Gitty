@@ -8,6 +8,11 @@
 
 import UIKit
 import CoreData
+import INSPersistentContainer
+import IQKeyboardManagerSwift
+
+typealias NSPersistentContainer         = INSPersistentContainer
+typealias NSPersistentStoreDescription  = INSPersistentStoreDescription
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +21,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        IQKeyboardManager.sharedManager().enable = true
+        UINavigationBar.appearance().barTintColor = UIColor.darkGray
+            //UIColor(red: 217/255, green: 34/255, blue: 42/255, alpha: 0.9)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().isTranslucent = false
+        UITabBar.appearance().tintColor = UIColor(red: 217/255, green: 34/255, blue: 42/255, alpha: 0.9)
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font : (UIFont(name: "Avenir-Heavy", size: 18))!, NSAttributedStringKey.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        if UserDefaults.standard.value(forKey: "userToken") as? String == nil {
+            let vc = storyBoardWithID("Main").viewControllerWithID("InitialViewController")
+            vc.modalTransitionStyle = .crossDissolve
+            window?.rootViewController = vc
+            window?.makeKeyAndVisible()
+        }
         return true
     }
 

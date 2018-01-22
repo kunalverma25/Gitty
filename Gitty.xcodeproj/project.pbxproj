@@ -7,23 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		039D0A4930FE1CC8A31ACB11 /* Pods_Gitty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C781014BF935766040B2586 /* Pods_Gitty.framework */; };
 		E8A0053B201351C200061025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0053A201351C200061025 /* AppDelegate.swift */; };
-		E8A0053D201351C200061025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0053C201351C200061025 /* ViewController.swift */; };
+		E8A0053D201351C200061025 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0053C201351C200061025 /* InitialViewController.swift */; };
 		E8A00540201351C200061025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A0053E201351C200061025 /* Main.storyboard */; };
 		E8A00543201351C200061025 /* Gitty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8A00541201351C200061025 /* Gitty.xcdatamodeld */; };
 		E8A00545201351C200061025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A00544201351C200061025 /* Assets.xcassets */; };
 		E8A00548201351C200061025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A00546201351C200061025 /* LaunchScreen.storyboard */; };
+		E8A005552013AD0A00061025 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A005542013AD0A00061025 /* Server.swift */; };
+		E8A005572013ADF700061025 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A005562013ADF700061025 /* AppConstants.swift */; };
+		E8A005592013B0A700061025 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A005582013B0A700061025 /* Extensions.swift */; };
+		E8A0055C2014598A00061025 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0055B2014598A00061025 /* ProfileVC.swift */; };
+		E8A0055E20145FD800061025 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0055D20145FD800061025 /* RoundedImageView.swift */; };
+		E8A00562201469DD00061025 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A00560201469DC00061025 /* Plan.swift */; };
+		E8A00563201469DD00061025 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A00561201469DC00061025 /* User.swift */; };
+		E8A0056720149B3800061025 /* NumberedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0056520149B3800061025 /* NumberedTableViewCell.swift */; };
+		E8A0056820149B3800061025 /* NumberedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A0056620149B3800061025 /* NumberedTableViewCell.xib */; };
+		E8A0056B20149B4A00061025 /* SubtitledTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0056920149B4A00061025 /* SubtitledTableViewCell.swift */; };
+		E8A0056C20149B4A00061025 /* SubtitledTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A0056A20149B4A00061025 /* SubtitledTableViewCell.xib */; };
+		E8A0056E20149DC600061025 /* ProfileCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0056D20149DC600061025 /* ProfileCellData.swift */; };
+		E8A005742014AFE400061025 /* UserSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A005732014AFE400061025 /* UserSearchVC.swift */; };
+		E8A005762014B36100061025 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A005752014B36100061025 /* SearchResult.swift */; };
+		E8A00578201509B100061025 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A00577201509B100061025 /* ListVC.swift */; };
+		E8A0057A2015860200061025 /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A005792015860200061025 /* Gist.swift */; };
+		E8A0057D20158D5B00061025 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0057B20158D5A00061025 /* License.swift */; };
+		E8A0057E20158D5B00061025 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0057C20158D5B00061025 /* Repo.swift */; };
+		E8A0058320158F5000061025 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A0058120158F5000061025 /* RepoTableViewCell.swift */; };
+		E8A0058420158F5000061025 /* RepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A0058220158F5000061025 /* RepoTableViewCell.xib */; };
+		E8A005862015B92200061025 /* SavedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A005852015B92200061025 /* SavedUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		133D8BDD75BEFDFDB1671019 /* Pods-Gitty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gitty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gitty/Pods-Gitty.debug.xcconfig"; sourceTree = "<group>"; };
+		5C781014BF935766040B2586 /* Pods_Gitty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gitty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A00537201351C200061025 /* Gitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A0053A201351C200061025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8A0053C201351C200061025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8A0053C201351C200061025 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		E8A0053F201351C200061025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8A00542201351C200061025 /* Gitty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gitty.xcdatamodel; sourceTree = "<group>"; };
 		E8A00544201351C200061025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8A00547201351C200061025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8A00549201351C200061025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8A005542013AD0A00061025 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		E8A005562013ADF700061025 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		E8A005582013B0A700061025 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E8A0055B2014598A00061025 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		E8A0055D20145FD800061025 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		E8A00560201469DC00061025 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		E8A00561201469DC00061025 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E8A0056520149B3800061025 /* NumberedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberedTableViewCell.swift; sourceTree = "<group>"; };
+		E8A0056620149B3800061025 /* NumberedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberedTableViewCell.xib; sourceTree = "<group>"; };
+		E8A0056920149B4A00061025 /* SubtitledTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitledTableViewCell.swift; sourceTree = "<group>"; };
+		E8A0056A20149B4A00061025 /* SubtitledTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtitledTableViewCell.xib; sourceTree = "<group>"; };
+		E8A0056D20149DC600061025 /* ProfileCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellData.swift; sourceTree = "<group>"; };
+		E8A005732014AFE400061025 /* UserSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchVC.swift; sourceTree = "<group>"; };
+		E8A005752014B36100061025 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		E8A00577201509B100061025 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		E8A005792015860200061025 /* Gist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
+		E8A0057B20158D5A00061025 /* License.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		E8A0057C20158D5B00061025 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		E8A0058120158F5000061025 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		E8A0058220158F5000061025 /* RepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoTableViewCell.xib; sourceTree = "<group>"; };
+		E8A005852015B92200061025 /* SavedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUser.swift; sourceTree = "<group>"; };
+		F745E07E59C9A69215F098EF /* Pods-Gitty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gitty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gitty/Pods-Gitty.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +77,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039D0A4930FE1CC8A31ACB11 /* Pods_Gitty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D04BA6CAC9B8D63CE8F49E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C781014BF935766040B2586 /* Pods_Gitty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBB9F0980455A1EE5080F947 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				133D8BDD75BEFDFDB1671019 /* Pods-Gitty.debug.xcconfig */,
+				F745E07E59C9A69215F098EF /* Pods-Gitty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E8A0052E201351C200061025 = {
 			isa = PBXGroup;
 			children = (
 				E8A00539201351C200061025 /* Gitty */,
 				E8A00538201351C200061025 /* Products */,
+				BBB9F0980455A1EE5080F947 /* Pods */,
+				2D04BA6CAC9B8D63CE8F49E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +122,11 @@
 		E8A00539201351C200061025 /* Gitty */ = {
 			isa = PBXGroup;
 			children = (
+				E8A0056420149B0800061025 /* CustomViews */,
+				E8A0055F2014675B00061025 /* Models */,
+				E8A0055A2014596200061025 /* ViewControllers */,
+				E8A005532013ACFC00061025 /* Helpers */,
 				E8A0053A201351C200061025 /* AppDelegate.swift */,
-				E8A0053C201351C200061025 /* ViewController.swift */,
 				E8A0053E201351C200061025 /* Main.storyboard */,
 				E8A00544201351C200061025 /* Assets.xcassets */,
 				E8A00546201351C200061025 /* LaunchScreen.storyboard */,
@@ -67,6 +136,56 @@
 			path = Gitty;
 			sourceTree = "<group>";
 		};
+		E8A005532013ACFC00061025 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E8A005542013AD0A00061025 /* Server.swift */,
+				E8A005562013ADF700061025 /* AppConstants.swift */,
+				E8A005582013B0A700061025 /* Extensions.swift */,
+				E8A0055D20145FD800061025 /* RoundedImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E8A0055A2014596200061025 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8A0053C201351C200061025 /* InitialViewController.swift */,
+				E8A0055B2014598A00061025 /* ProfileVC.swift */,
+				E8A005732014AFE400061025 /* UserSearchVC.swift */,
+				E8A00577201509B100061025 /* ListVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E8A0055F2014675B00061025 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8A0057B20158D5A00061025 /* License.swift */,
+				E8A0057C20158D5B00061025 /* Repo.swift */,
+				E8A005792015860200061025 /* Gist.swift */,
+				E8A005752014B36100061025 /* SearchResult.swift */,
+				E8A00560201469DC00061025 /* Plan.swift */,
+				E8A00561201469DC00061025 /* User.swift */,
+				E8A0056D20149DC600061025 /* ProfileCellData.swift */,
+				E8A005852015B92200061025 /* SavedUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8A0056420149B0800061025 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E8A0056520149B3800061025 /* NumberedTableViewCell.swift */,
+				E8A0056620149B3800061025 /* NumberedTableViewCell.xib */,
+				E8A0056920149B4A00061025 /* SubtitledTableViewCell.swift */,
+				E8A0056A20149B4A00061025 /* SubtitledTableViewCell.xib */,
+				E8A0058120158F5000061025 /* RepoTableViewCell.swift */,
+				E8A0058220158F5000061025 /* RepoTableViewCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8A0054C201351C200061025 /* Build configuration list for PBXNativeTarget "Gitty" */;
 			buildPhases = (
+				C244B20B09A2D5E12923DE10 /* [CP] Check Pods Manifest.lock */,
 				E8A00533201351C200061025 /* Sources */,
 				E8A00534201351C200061025 /* Frameworks */,
 				E8A00535201351C200061025 /* Resources */,
+				96EFEF34CE3EC2843610E81A /* [CP] Embed Pods Frameworks */,
+				96931B2547F6667B16B0B66A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,19 +251,88 @@
 				E8A00548201351C200061025 /* LaunchScreen.storyboard in Resources */,
 				E8A00545201351C200061025 /* Assets.xcassets in Resources */,
 				E8A00540201351C200061025 /* Main.storyboard in Resources */,
+				E8A0056C20149B4A00061025 /* SubtitledTableViewCell.xib in Resources */,
+				E8A0056820149B3800061025 /* NumberedTableViewCell.xib in Resources */,
+				E8A0058420158F5000061025 /* RepoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96931B2547F6667B16B0B66A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gitty/Pods-Gitty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96EFEF34CE3EC2843610E81A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gitty/Pods-Gitty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C244B20B09A2D5E12923DE10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8A00533201351C200061025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8A0053D201351C200061025 /* ViewController.swift in Sources */,
+				E8A0055E20145FD800061025 /* RoundedImageView.swift in Sources */,
+				E8A005742014AFE400061025 /* UserSearchVC.swift in Sources */,
+				E8A005862015B92200061025 /* SavedUser.swift in Sources */,
+				E8A0053D201351C200061025 /* InitialViewController.swift in Sources */,
+				E8A0058320158F5000061025 /* RepoTableViewCell.swift in Sources */,
+				E8A0056B20149B4A00061025 /* SubtitledTableViewCell.swift in Sources */,
+				E8A0057A2015860200061025 /* Gist.swift in Sources */,
+				E8A005592013B0A700061025 /* Extensions.swift in Sources */,
+				E8A0056E20149DC600061025 /* ProfileCellData.swift in Sources */,
+				E8A0055C2014598A00061025 /* ProfileVC.swift in Sources */,
+				E8A005762014B36100061025 /* SearchResult.swift in Sources */,
 				E8A00543201351C200061025 /* Gitty.xcdatamodeld in Sources */,
+				E8A00562201469DD00061025 /* Plan.swift in Sources */,
+				E8A0056720149B3800061025 /* NumberedTableViewCell.swift in Sources */,
+				E8A005552013AD0A00061025 /* Server.swift in Sources */,
 				E8A0053B201351C200061025 /* AppDelegate.swift in Sources */,
+				E8A00563201469DD00061025 /* User.swift in Sources */,
+				E8A005572013ADF700061025 /* AppConstants.swift in Sources */,
+				E8A00578201509B100061025 /* ListVC.swift in Sources */,
+				E8A0057D20158D5B00061025 /* License.swift in Sources */,
+				E8A0057E20158D5B00061025 /* Repo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,11 +467,13 @@
 		};
 		E8A0054D201351C200061025 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133D8BDD75BEFDFDB1671019 /* Pods-Gitty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FB6EBR3Q9N;
 				INFOPLIST_FILE = Gitty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kunal.Gitty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,11 +484,13 @@
 		};
 		E8A0054E201351C200061025 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F745E07E59C9A69215F098EF /* Pods-Gitty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FB6EBR3Q9N;
 				INFOPLIST_FILE = Gitty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kunal.Gitty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
