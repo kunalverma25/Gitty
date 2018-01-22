@@ -163,10 +163,7 @@ class UserSearchVC: UIViewController, UISearchBarDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
-        UIView.animate(withDuration: 0.4) {
-            cell.transform = CGAffineTransform.identity
-        }
+        cell.animateCell()
         if isInternetAvailable() {
             if indexPath.row == users.count - 1 && users.count != searchResult?.total_count {
                 self.searchPage += 1

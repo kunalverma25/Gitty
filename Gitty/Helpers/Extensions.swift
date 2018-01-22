@@ -96,6 +96,15 @@ extension Optional where Wrapped == String {
     }
 }
 
+extension UITableViewCell {
+    func animateCell() {
+        self.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        UIView.animate(withDuration: 0.4) {
+            self.transform = CGAffineTransform.identity
+        }
+    }
+}
+
 func isInternetAvailable() -> Bool {
     
     var zeroAddress = sockaddr_in()
