@@ -97,7 +97,7 @@ class UserSearchVC: UIViewController, UISearchBarDelegate, UITableViewDataSource
                     self.usersTableView.delegate = self
                     self.usersTableView.dataSource = self
                     self.usersTableView.reloadData()
-                    self.users.map { self.saveUsers($0) }
+                    _ = self.users.map { self.saveUsers($0) }
                 }
                 catch {
                     // error in parsing
@@ -163,6 +163,10 @@ class UserSearchVC: UIViewController, UISearchBarDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        UIView.animate(withDuration: 0.4) {
+            cell.transform = CGAffineTransform.identity
+        }
         if isInternetAvailable() {
             if indexPath.row == users.count - 1 && users.count != searchResult?.total_count {
                 self.searchPage += 1

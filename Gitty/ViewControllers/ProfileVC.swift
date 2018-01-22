@@ -55,15 +55,10 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @objc func tapFollowing(_ sender: UITapGestureRecognizer) {
-        print(fetchedUser?.followers_url)
         guard let url = fetchedUser?.following_url?.replacingOccurrences(of: "{/other_user}", with: ""), URL(string: url) != nil else {
             return
         }
         performSegue(withIdentifier: "listSegue", sender: "Following")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
     }
     
     func fetchProfile(isLoggedInUser: Bool, userName: String? = nil) {
@@ -180,6 +175,13 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             UIApplication.shared.openURL(URL(string: url)!)
         default:
             break
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        UIView.animate(withDuration: 0.4) {
+            cell.transform = CGAffineTransform.identity
         }
     }
     

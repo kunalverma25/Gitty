@@ -191,6 +191,10 @@ class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        UIView.animate(withDuration: 0.4) {
+            cell.transform = CGAffineTransform.identity
+        }
         if isUser {
             if indexPath.row == users.count - 1 && users.count != maxValues {
                 self.page += 1
@@ -214,7 +218,9 @@ class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "profileSegue" {
             let vc = segue.destination as! ProfileVC
-            vc.user = sender as! User
+            if let user = sender as? User {
+                vc.user = user
+            }
             let backItem = UIBarButtonItem()
             backItem.title = ""
             navigationItem.backBarButtonItem = backItem

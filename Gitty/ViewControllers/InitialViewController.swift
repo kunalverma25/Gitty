@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         
         Server.callAPI(URL(string: APIServer.loginURL)!, method: .post, parameters: params, headers: header, encoding: JSONEncoding.default) { (json, error) in
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
-            if let token = json?["token"].string {
+            if json?["token"].string != nil {
                 UserDefaults.standard.set(basicAuth, forKey: "userToken")
                 self.performSegue(withIdentifier: "tabBarSegue", sender: nil)
             }
